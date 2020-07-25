@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ffb300;
+    font-family: sans-serif;
+}
+.container {
+    width: 60%;
+    text-align: center;
+    margin: 100px auto;
+    position: relative;
+}
+
+h1 {
+    color: #e91e63;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.content {
+    display: flex;
+    margin: 0 auto 40px;
+    width: 80%;
+}
+input , button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    height: 40px;
+    border-radius: 4px;
+}
+input {
+    width: 100%;
+    font-size: 18px;
+}
+input:focus {
+    outline: 1px solid #00e676;
+}
+button {
+    height: 40px;
+    width: 10%;
+    cursor: pointer;
+    background-color: #00e676;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+    }
+button:hover {
+    background-color: #00c853;
+}
+@media (max-width: 576px) {
+    h1 {
+        font-size: 35px;
+    }
+    button {
+        width: 20%;
+    }
+}
+@media (max-width: 377px) {
+    h1 {
+        font-size: 20px;
+    }
+    #input {
+        width: 120px;
+        display: block;
+    }
+    button {
+        width: 20px;
+    }
+}
+
+.data {
+    width: 50%;
+    margin: 0 auto 10px;
+    height: 30px;
+}
+.data .list,
+.data .delete,
+.data .complete {
+    height: 80%;
+    display: inline-block;
+    line-height: 24px;
+    border-radius: 4px;
+}
+.data .list {
+    background-color: #f8f8f8;
+    width: 75%;
+    text-align: left;
+    padding-left: 10px;
+}
+.data .delete,
+.data .complete {
+    color: #fff;
+    background-color: #f00;
+    width: 30px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 900;
+}
+.data .delete {
+    background-color: #f00;
+}
+.data .complete {
+    background-color: #00e676;
+}
+.alert {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all .3s linear;
+    opacity: 0;
+    z-index: -1;
+}
+.alert div {
+    background-color: #00BCD4;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    padding: 30px;
+    border-radius: 4px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.alert div p {
+    color: #fff;
+    font-size: 20px;
+ 
+}
